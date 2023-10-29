@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Добро пожаловать в сканер диапазона IP-адресов</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+      color: #333;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    form {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #network-image {
+      display: block;
+      margin: 40px auto;
+      max-width: 300px;
+      filter: brightness(30%);
+    }
+  </style>
+</head>
+<body>
+<h1>Добро пожаловать в сканер диапазона IP-адресов</h1>
+<p style="font-size: 18px; text-align: center; text-transform: lowercase; font-style: italic;">Введите диапазон IP-адресов:</p>
+<form action="/scan" method="post">
+  <input type="text" name="ipRange" placeholder="51.38.24.0/24">
+  <button type="submit">Сканировать</button>
+</form>
+
+</body>
+</html>
